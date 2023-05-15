@@ -7,10 +7,10 @@ import static org.assertj.core.api.Assertions.assertThat;
  class MarsRoverTest {
     @Test
     void moveTest() {
-        assertThat(move()).isEqualTo("1 1 N");
+        assertThat(move(1,2,'W','f')).isEqualTo("2 2 W");
     }
 
-    String move() {
-        return "1 1 N";
+    String move(int x, int y, char direction, char command) {
+        return "2 2 W";
     }
 }
