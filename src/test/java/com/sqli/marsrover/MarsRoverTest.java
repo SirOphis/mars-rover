@@ -23,6 +23,6 @@ class MarsRoverTest {
         return new Rover(rover.x() + 1, 2, 'W');
     }
 
-    private static record Rover(int x, int y, char direction) {
+    private  record Rover(int x, int y, char direction) {
     }
 }
