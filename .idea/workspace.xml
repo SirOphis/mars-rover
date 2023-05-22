@@ -5,21 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6466a00d-a2bd-4e2b-a7b4-008ddb807b48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sqli/marsrover/Rover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_05_2023_14_49__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_05_2023_14_49__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sqli/marsrover/Rover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sqli/marsrover/Rover.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sqli/marsrover/MarsRoverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sqli/marsrover/MarsRoverTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,18 +44,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\amohamadou\Downloads\mars-rover\src\main\java\com\sqli\marsrover" />
-    </key>
-    <key name="MoveMembersDialog.RECENTS_KEY">
-      <recent name="com.sqli.marsrover.Rover" />
-    </key>
-    <key name="MoveInnerDialog.RECENTS_KEY">
-      <recent name="com.sqli.marsrover" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.MarsRoverTest">
+  <component name="RunManager" selected="JUnit.MarsRoverTest.moveForwardTest">
     <configuration default="true" type="AZURE_FUNCTION_SUPPORT" factoryName="Run Functions">
       <option name="appName" />
       <option name="appServicePlanName" />
@@ -91,8 +75,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MarsRoverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mars-rover" />
+    <configuration name="MarsRoverTest.moveForwardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="craft" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.sqli.marsrover.*" />
@@ -101,7 +85,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.sqli.marsrover" />
       <option name="MAIN_CLASS_NAME" value="com.sqli.marsrover.MarsRoverTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="moveForwardTest(int,int,char,int,int,char)" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,7 +125,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MarsRoverTest" />
+        <item itemvalue="JUnit.MarsRoverTest.moveForwardTest" />
         <item itemvalue="JUnit.MarsRoverTest.moveTest (1)" />
         <item itemvalue="JUnit.MarsRoverTest.moveTest" />
       </list>
