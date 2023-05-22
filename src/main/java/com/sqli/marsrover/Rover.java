@@ -1,55 +1,33 @@
 package com.sqli.marsrover;
 
 record Rover(int x, int y, char direction) {
-    Rover moveForward() {
+    Rover moveByCommand(char command) {
         Rover rover = new Rover(x(), y(), direction);
-        rover = getRoverByDirection(rover);
-        return rover;
-    }
-    public Rover moveBackward() {
-        Rover rover = new Rover(x(), y(), direction);
-        rover = getRoverByDirectionBackward(rover);
+        rover = getRoverByDirection(rover, command);
         return rover;
     }
 
-    private Rover getRoverByDirection(Rover rover) {
-        switch (direction) {
-            case 'W':
-                rover = new Rover(x() - 1, y(), 'W');
-                break;
-            case 'N':
-                rover = new Rover(x(), y() + 1, 'N');
-                break;
-            case 'S':
-                rover = new Rover(x(), y() - 1, 'S');
-                break;
-            case 'E':
-                rover = new Rover(x() + 1, y(), 'E');
-                break;
-            default:
-                break;
-        }
-        return rover;
-    }
+    private Rover getRoverByDirection(Rover rover, char command) {
+        int x = rover.x;
+        int y = rover.y;
 
-    private Rover getRoverByDirectionBackward(Rover rover) {
-        switch (direction) {
-            case 'W':
-                rover = new Rover(x() + 1, y(), 'W');
-                break;
-            case 'N':
-                rover = new Rover(x(), y() - 1, 'N');
-                break;
-            case 'S':
-                rover = new Rover(x(), y() + 1, 'S');
-                break;
-            case 'E':
-                rover = new Rover(x() - 1, y(), 'E');
-                break;
-            default:
-                break;
+        if((command == 'b' && rover.direction == 'W') || command == 'f' && rover.direction == 'E'){
+            x++;
         }
-        return rover;
+
+        if(((command == 'f' && rover.direction == 'W') || command == 'b' && rover.direction == 'E')){
+            x--;
+        }
+
+        if(((command == 'f' && rover.direction == 'S') || command == 'b' && rover.direction == 'N')){
+            y--;
+        }
+
+        if(((command == 'f' && rover.direction == 'N') || command == 'b' && rover.direction == 'S')){
+            y++;
+        }
+
+        return new Rover(x,y, rover.direction);
     }
 
 
