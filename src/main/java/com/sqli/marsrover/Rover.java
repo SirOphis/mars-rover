@@ -1,34 +1,59 @@
 package com.sqli.marsrover;
 
-record Rover(int x, int y, char direction) {
-    Rover moveByCommand(char command) {
-        Rover rover = new Rover(x(), y(), direction);
-        rover = getRoverByDirection(rover, command);
-        return rover;
+import static com.sqli.marsrover.Command.BACKWARD;
+import static com.sqli.marsrover.Command.FORWARD;
+import static com.sqli.marsrover.Direction.*;
+
+record Rover(int x, int y, Direction direction) {
+    Rover moveByCommand(Command command) {
+        int x1 = this.x();
+        int y1 = this.y();
+
+        if (toEast(command)) {
+            x1++;
+        }
+
+        if (toWest(command)) {
+            x1--;
+        }
+
+        if (toSouth(command)) {
+            y1--;
+        }
+
+        if (toNorth(command)) {
+            y1++;
+        }
+
+        return new Rover(x1, y1, direction);
     }
 
-    private Rover getRoverByDirection(Rover rover, char command) {
-        int x = rover.x;
-        int y = rover.y;
-
-        if((command == 'b' && rover.direction == 'W') || command == 'f' && rover.direction == 'E'){
-            x++;
-        }
-
-        if(((command == 'f' && rover.direction == 'W') || command == 'b' && rover.direction == 'E')){
-            x--;
-        }
-
-        if(((command == 'f' && rover.direction == 'S') || command == 'b' && rover.direction == 'N')){
-            y--;
-        }
-
-        if(((command == 'f' && rover.direction == 'N') || command == 'b' && rover.direction == 'S')){
-            y++;
-        }
-
-        return new Rover(x,y, rover.direction);
+    private boolean toNorth(Command command) {
+        return (command == FORWARD && direction == NORTH) || command == BACKWARD && direction == SOUTH;
     }
 
+    private boolean toSouth(Command command) {
+        return (command == FORWARD && direction == SOUTH) || command == BACKWARD && direction == NORTH;
+    }
 
+    private boolean toWest(Command command) {
+        return (command == FORWARD && direction == WEST) || command == BACKWARD && direction == EAST;
+    }
+
+    private boolean toEast(Command command) {
+        return (command == BACKWARD && direction == WEST) || command == FORWARD && direction == EAST;
+    }
+
+}
+
+enum Direction {
+    NORTH,
+    SOUTH,
+    EAST,
+    WEST
+}
+
+enum Command {
+    FORWARD,
+    BACKWARD
 }

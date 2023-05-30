@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6466a00d-a2bd-4e2b-a7b4-008ddb807b48" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sqli/marsrover/Rover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sqli/marsrover/Rover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sqli/marsrover/MarsRoverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sqli/marsrover/MarsRoverTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +27,13 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2PpXkSeNDhXc7Qp0zzOxj4fDr2s" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -104,8 +113,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MarsRoverTest.moveTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="craft" />
+    <configuration name="MarsRoverTest.moveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mars-rover" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.sqli.marsrover.*" />
@@ -121,7 +130,7 @@
       </method>
     </configuration>
     <configuration name="MarsRoverTest.moveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mars-rover" />
+      <module name="craft" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.sqli.marsrover.*" />
@@ -153,6 +162,9 @@
       <option name="presentableId" value="Default" />
       <updated>1684155141535</updated>
       <workItem from="1684155142788" duration="310000" />
+      <workItem from="1684772592800" duration="136000" />
+      <workItem from="1684772748370" duration="79000" />
+      <workItem from="1685444485919" duration="2469000" />
     </task>
     <servers />
   </component>
