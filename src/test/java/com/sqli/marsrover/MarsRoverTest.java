@@ -20,7 +20,7 @@ class MarsRoverTest {
     })
     void moveForwardTest(int x, int y, Direction direction, int newX, int newY, Direction newDir) {
         Rover rover = new Rover(x, y, direction);
-        Rover result = rover.moveByCommand(FORWARD);
+        Rover result = FORWARD.move(rover);
         assertThat(result).isEqualTo(new Rover(newX, newY, newDir));
     }
 
@@ -36,7 +36,7 @@ class MarsRoverTest {
 
     void moveBackwardTest(int x, int y, Direction direction, int newX, int newY, Direction newDir) {
         Rover rover = new Rover(x, y, direction);
-        Rover result = rover.moveByCommand(BACKWARD);
+        Rover result = BACKWARD.move(rover);
         assertThat(result).isEqualTo(new Rover(newX, newY, newDir));
     }
 }
